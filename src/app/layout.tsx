@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode, FunctionComponent, JSX } from "react";
 import "./globals.css";
+import { banglaFont } from "@/fonts/fonts";
+import Header from "@/components/layout/Header/header";
 
 export const metadata: Metadata = {
   title:
@@ -15,8 +17,11 @@ const RootLayout: FunctionComponent<RootLayoutProps> = ({
   children,
 }: RootLayoutProps): JSX.Element => {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={banglaFont.className}>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 };

@@ -1,12 +1,11 @@
 import type { NextFont } from "next/dist/compiled/@next/font";
-import { Roboto } from "next/font/google";
+import localFont from "next/font/local";
 
-const roboto: NextFont = Roboto({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const banglaFont: NextFont = localFont({
+  src: "../../public/fonts/bangla-font.ttf",
   preload: true,
   display: "swap",
-  fallback: ["Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+  fallback: ["Hind Siliguri", "sans-serif"],
 });
 
-export { roboto };
+export { banglaFont };
