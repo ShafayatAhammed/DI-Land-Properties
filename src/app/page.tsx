@@ -2,9 +2,9 @@ import type { FunctionComponent, JSX } from "react";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-gray-100">
-      <p className="text-6xl font-bold text-black">Hello, world!</p>
-    </div>
+    <p className="text-6xl font-bold text-black absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+      Hello, world!
+    </p>
   );
 };
 

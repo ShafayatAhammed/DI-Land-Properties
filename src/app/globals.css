@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-text: #303441;
+  --color-nav-item-hover: #4b85f0;
+  --breakpoint-lg-xl: 1124px;
+}
+
 * {
   @apply box-border;
 }

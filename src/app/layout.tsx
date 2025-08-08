@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode, FunctionComponent, JSX } from "react";
-import "./globals.css";
-import { banglaFont } from "@/fonts/fonts";
-import Header from "@/components/layout/Header/header";
+import "@app/globals.css";
+import { banglaFont } from "@fonts/bangla-fonts/fonts";
+import { HeaderProvider } from "@context/header/context";
+import Header from "@components/layout/header/header";
 
 export const metadata: Metadata = {
   title:
@@ -19,7 +20,9 @@ const RootLayout: FunctionComponent<RootLayoutProps> = ({
   return (
     <html lang="en" className={banglaFont.className}>
       <body>
-        <Header />
+        <HeaderProvider>
+          <Header />
+        </HeaderProvider>
         {children}
       </body>
     </html>
