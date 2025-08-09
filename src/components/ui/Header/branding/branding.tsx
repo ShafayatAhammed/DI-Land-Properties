@@ -10,6 +10,7 @@ const Branding: FunctionComponent = (): JSX.Element => {
       <Image
         src="/logos/logo-non-bg.png"
         alt="DI Land Properties Logo"
+        className="xl-2xl:w-[210px] xl-2xl:h-[47px]"
         width={205}
         height={42}
       />

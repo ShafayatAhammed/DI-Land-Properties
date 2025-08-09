@@ -4,7 +4,7 @@ import type { FunctionComponent, JSX } from "react";
 import { usePathname } from "next/navigation";
 import { navMenuItems } from "@lib/data/nav-menu/data";
 import { isActive } from "@lib/utils/nav-menu/utils";
-import NavMenuItem from "@components/ui/Header/nav-menu/nav-menu-item";
+import NavMenuItem from "@components/ui/header/nav-menu/nav-menu-item";
 
 const NavMenu: FunctionComponent = (): JSX.Element => {
   const currentPath: string = usePathname();
@@ -18,7 +18,7 @@ const NavMenu: FunctionComponent = (): JSX.Element => {
       <ul className="flex items-center">
         {navMenuItems.map((item) => {
           return (
-            <li key={item.href}>
+            <li key={item.href} className="xl-2xl:text-[17.5px]">
               <NavMenuItem
                 key={item.href}
                 href={item.href}

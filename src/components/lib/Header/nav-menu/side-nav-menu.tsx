@@ -12,9 +12,9 @@ import { navMenuItems } from "@lib/data/nav-menu/data";
 import type { HeaderContextType } from "@context/header/context";
 import useHeader from "@hooks/context/header/hooks";
 import { isActive } from "@lib/utils/nav-menu/utils";
-import NavMenuItem from "@components/ui/Header/nav-menu/nav-menu-item";
-import ActionButton from "@components/ui/Header/action/action-button";
-import SideNavMenuClose from "@components/ui/Header/nav-menu/side-nav-menu-close";
+import NavMenuItem from "@components/ui/header/nav-menu/nav-menu-item";
+import ActionButton from "@components/ui/header/action/action-button";
+import SideNavMenuClose from "@components/ui/header/nav-menu/side-nav-menu-close";
 
 const SideNavMenu: FunctionComponent = (): JSX.Element => {
   const currentPath: string = usePathname();
@@ -45,7 +45,7 @@ const SideNavMenu: FunctionComponent = (): JSX.Element => {
   }, []);
 
   return (
-    <nav
+    <aside
       className={`fixed top-0 left-0 w-full h-full backdrop-blur-[1px] z-[100] select-none
     transition-opacity duration-300 ease-out
     ${
@@ -79,7 +79,7 @@ const SideNavMenu: FunctionComponent = (): JSX.Element => {
         </ul>
         <SideNavMenuClose />
       </div>
-    </nav>
+    </aside>
   );
 };
 
