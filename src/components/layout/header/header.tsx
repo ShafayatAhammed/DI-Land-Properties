@@ -7,7 +7,7 @@ import SideNavMenu from "@components/lib/Header/nav-menu/side-nav-menu";
 
 const Header: FunctionComponent = (): JSX.Element => {
   return (
-    <header className="bg-white py-5 flex items-center justify-between px-[17px] sm:px-7 md:px-14 xl:px-28 border-b border-gray-200 gap-5 sm:gap-0">
+    <header className="bg-white py-5 flex items-center justify-between px-[17px] sm:px-7 md:px-14 xl:px-28 border-b border-gray-200 fixed top-0 z-[100] gap-5 sm:gap-0 w-full">
       <Branding />
       <NavMenu />
       <div className="sm:flex sm:items-center sm:gap-4">

@@ -46,7 +46,7 @@ const SideNavMenu: FunctionComponent = (): JSX.Element => {
 
   return (
     <nav
-      className={`absolute w-full h-full left-0 top-0 backdrop-blur-[1px] z-[100] select-none
+      className={`fixed top-0 left-0 w-full h-full backdrop-blur-[1px] z-[100] select-none
     transition-opacity duration-300 ease-out
     ${
       isSidebarNavMenuOpen
