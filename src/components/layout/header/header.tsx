@@ -12,7 +12,7 @@ const Header: FunctionComponent = (): JSX.Element => {
         <Branding />
         <NavMenu />
         <div className="sm:flex sm:items-center sm:gap-4">
-          <div className="hidden sm:block bg-white hover:bg-nav-item-hover border border-nav-item-hover rounded-full text-primary-text hover:text-white transition-colors duration-300 fill-nav-item-hover hover:fill-white">
+          <div className="hidden sm:block bg-white hover:bg-blue-1 border border-blue-1 rounded-full text-primary-text hover:text-white transition-colors duration-300 fill-blue-1 hover:fill-white">
             <ActionButton />
           </div>
           <SideNavMenuBar />

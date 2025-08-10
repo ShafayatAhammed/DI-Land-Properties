@@ -22,8 +22,8 @@ const NavMenuItem: FunctionComponent<NavMenuItemProps> = ({
       prefetch={true}
       className={`${
         active
-          ? "text-white bg-nav-item-hover"
-          : "text-primary-text hover:text-white bg-white hover:bg-nav-item-hover transition duration-300"
+          ? "text-white bg-blue-1"
+          : "text-primary-text hover:text-white bg-white hover:bg-blue-1 transition duration-300"
       } px-[15px] py-[9px] ${area === "small" ? "block" : ""}`}
     >
       {label}

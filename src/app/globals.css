@@ -2,8 +2,12 @@
 
 @theme {
   --color-primary-text: #303441;
-  --color-nav-item-hover: #4b85f0;
+  --color-blue-1: #4b85f0;
+  --color-blue-2: #3262cc;
+  --breakpoint-xs: 420px;
+  --breakpoint-xs-2: 540px;
   --breakpoint-lg-xl: 1124px;
+  --breakpoint-lg-xl-2: 1180px;
   --breakpoint-xl-2xl: 1440px;
 }
 
