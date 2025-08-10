@@ -16,14 +16,13 @@ const NavMenu: FunctionComponent = (): JSX.Element => {
   return (
     <nav className="hidden lg-xl:block select-none">
       <ul className="flex items-center">
-        {navMenuItems.map((item) => {
+        {navMenuItems.map(({ href, label, active }): JSX.Element => {
           return (
-            <li key={item.href} className="xl-2xl:text-[17.5px]">
+            <li key={href} className="xl-2xl:text-[17.5px]">
               <NavMenuItem
-                key={item.href}
-                href={item.href}
-                label={item.label}
-                active={item.active!}
+                href={href}
+                label={label}
+                active={active!}
                 area="large"
               />
             </li>
