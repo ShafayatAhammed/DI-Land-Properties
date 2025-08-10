@@ -46,7 +46,7 @@ const SideNavMenu: FunctionComponent = (): JSX.Element => {
 
   return (
     <aside
-      className={`fixed top-0 left-0 w-full h-full backdrop-blur-[1px] z-[100] select-none
+      className={`fixed top-0 left-0 w-full h-full z-[100] select-none
     transition-opacity duration-300 ease-out
     ${
       isSidebarNavMenuOpen
@@ -54,30 +54,31 @@ const SideNavMenu: FunctionComponent = (): JSX.Element => {
         : "opacity-0 pointer-events-none"
     }`}
     >
-      <div
-        className={`w-[280px] h-full bg-transparent flex transform transition-transform duration-300 ease-out
+      <div className="w-full h-full absolute inset-0 bg-black/50">
+        <div
+          className={`w-[280px] h-full flex transform transition-transform duration-300 ease-out
       ${isSidebarNavMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
-        ref={sidebarRef}
-      >
-        <ul className="w-full h-full bg-white border-r border-gray-300 overflow-auto">
-          {navMenuItems.map((item) => {
-            return (
-              <li key={item.href} className="border-b border-gray-300">
-                <NavMenuItem
-                  key={item.href}
-                  href={item.href}
-                  label={item.label}
-                  active={item.active!}
-                  area="small"
-                />
-              </li>
-            );
-          })}
-          <li className="bg-white hover:bg-nav-item-hover text-primary-text border-b border-gray-300 hover:text-white transition-colors duration-300 fill-nav-item-hover hover:fill-white sm:hidden">
-            <ActionButton />
-          </li>
-        </ul>
-        <SideNavMenuClose />
+          ref={sidebarRef}
+        >
+          <ul className="w-full h-full bg-white border-r border-gray-300 overflow-auto">
+            {navMenuItems.map(({ href, label, active }): JSX.Element => {
+              return (
+                <li key={href} className="border-b border-gray-300">
+                  <NavMenuItem
+                    href={href}
+                    label={label}
+                    active={active!}
+                    area="small"
+                  />
+                </li>
+              );
+            })}
+            <li className="bg-white hover:bg-blue-1 text-primary-text border-b border-gray-300 hover:text-white transition-colors duration-300 fill-blue-1 hover:fill-white sm:hidden">
+              <ActionButton />
+            </li>
+          </ul>
+          <SideNavMenuClose />
+        </div>
       </div>
     </aside>
   );
