@@ -31,7 +31,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
 
   const carousels: Carousel[] = [
     {
-      bannerSrc: "/carousel-image-1.jpg",
+      bannerSrc: "/carousel-banner-1.jpg",
       title: "Awesome Family Home",
       beds: 1,
       baths: 1,
@@ -40,7 +40,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
       listingUrl: "/",
     },
     {
-      bannerSrc: "/carousel-image-2.jpg",
+      bannerSrc: "/carousel-banner-2.jpg",
       title: "Contemporary studio",
       beds: 1,
       baths: 1,
@@ -49,7 +49,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
       listingUrl: "/",
     },
     {
-      bannerSrc: "/carousel-image-3.jpg",
+      bannerSrc: "/carousel-banner-3.jpg",
       title: "Studio bay view",
       beds: 1,
       baths: 1,
@@ -58,7 +58,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
       listingUrl: "/",
     },
     {
-      bannerSrc: "/carousel-image-4.jpg",
+      bannerSrc: "/carousel-banner-4.jpg",
       title: "Studio on Compton",
       beds: 4,
       baths: 3,
