@@ -77,7 +77,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
         slidesPerView={width < 660 ? 1 : width < 1024 ? 2 : 3}
         spaceBetween={15}
         autoplay={{
-          delay: 5000000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         loop={true}
