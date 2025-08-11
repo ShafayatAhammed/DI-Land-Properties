@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX, ReactElement } from "react";
-import CallToActionItem from "@components/ui/contact-us/call-to-action/call-to-action-item";
+import CallToActionItem from "../../../../components/ui/contact-us/call-to-action/call-to-action-item";
 
 interface Actions {
   icon: ReactElement<SVGSVGElement>;

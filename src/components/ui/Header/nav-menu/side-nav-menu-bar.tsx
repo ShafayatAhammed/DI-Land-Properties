@@ -1,8 +1,8 @@
 "use client";
 
 import type { FunctionComponent, JSX } from "react";
-import type { HeaderContextType } from "@context/header/context";
-import useHeader from "@hooks/context/header/hooks";
+import type { HeaderContextType } from "../../../../context/header/context";
+import useHeader from "../../../../hooks/context/header/hooks";
 
 const SideNavMenuBar: FunctionComponent = (): JSX.Element => {
   const { setIsSidebarNavMenuOpen }: HeaderContextType = useHeader();

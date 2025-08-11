@@ -1,9 +1,9 @@
 import type { FunctionComponent, JSX } from "react";
-import Branding from "@components/ui/header/branding/branding";
-import NavMenu from "@components/lib/header/nav-menu/nav-menu";
-import ActionButton from "@components/ui/header/action/action-button";
-import SideNavMenuBar from "@components/ui/header/nav-menu/side-nav-menu-bar";
-import SideNavMenu from "@components/lib/header/nav-menu/side-nav-menu";
+import Branding from "../../../components/ui/header/branding/branding";
+import NavMenu from "../../../components/lib/header/nav-menu/nav-menu";
+import ActionButton from "../../../components/ui/header/action/action-button";
+import SideNavMenuBar from "../../../components/ui/header/nav-menu/side-nav-menu-bar";
+import SideNavMenu from "../../../components/lib/header/nav-menu/side-nav-menu";
 
 const Header: FunctionComponent = (): JSX.Element => {
   return (

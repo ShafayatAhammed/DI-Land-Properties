@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX, ReactElement } from "react";
-import ContactFormInput from "@components/ui/contact-us/contact/contact-form/contact-form-input";
+import ContactFormInput from "../../../../components/ui/contact-us/contact/contact-form/contact-form-input";
 
 interface ContactFormInput {
   icon: ReactElement<SVGSVGElement>;

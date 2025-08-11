@@ -1,4 +1,4 @@
-import type { isActiveFunc } from "@lib/types/nav-menu/types";
+import type { isActiveFunc } from "../../../lib/types/nav-menu/types";
 
 interface NavMenuItem {
   href: string;

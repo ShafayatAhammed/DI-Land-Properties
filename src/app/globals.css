@@ -6,6 +6,7 @@
   --color-blue-2: #3262cc;
   --breakpoint-xs: 420px;
   --breakpoint-xs-2: 540px;
+  --breakpoint-sm-md: 660px;
   --breakpoint-lg-xl: 1124px;
   --breakpoint-lg-xl-2: 1180px;
   --breakpoint-xl-2xl: 1440px;
@@ -23,4 +24,24 @@ img {
   @apply select-none pointer-events-none;
   -webkit-user-drag: none;
   -moz-user-select: none;
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiper-button-next::after {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active-main {
+  background-color: #4b85f0 !important;
 }

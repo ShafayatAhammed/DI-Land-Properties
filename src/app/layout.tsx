@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode, FunctionComponent, JSX } from "react";
-import "@app/globals.css";
-import { banglaFont } from "@fonts/bangla-fonts/fonts";
-import { HeaderProvider } from "@context/header/context";
-import Header from "@components/layout/header/header";
+import "./globals.css";
+import { banglaFont } from "../fonts/bangla-fonts/fonts";
+import { HeaderProvider } from "../context/header/context";
+import Header from "../components/layout/header/header";
 
 export const metadata: Metadata = {
   title:
