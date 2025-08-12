@@ -1,12 +1,6 @@
 import type { FunctionComponent, JSX } from "react";
-import ApartmentType from "@/components/ui/home/apartment-types/apartment-type";
-
-interface ApartmentType {
-  title: string;
-  propertyCount: number;
-  bannerSrc: string;
-  propertiesUrl: string;
-}
+import type { ApartmentTypesType as ApartmentType } from "@/lib/types/home/types";
+import ApartmentTypeArea from "@/components/ui/home/apartment-types/apartment-type";
 
 const ApartmentTypes: FunctionComponent = (): JSX.Element => {
   const apartmentTypes: ApartmentType[] = [
@@ -45,7 +39,7 @@ const ApartmentTypes: FunctionComponent = (): JSX.Element => {
   return (
     <div className="grid md:grid-cols-3 lg:grid-cols-4 md:grid-row-4 lg:grid-rows-2 gap-8">
       <div className="md:col-span-2">
-        <ApartmentType
+        <ApartmentTypeArea
           title={apartmentTypes[0].title}
           propertyCount={apartmentTypes[0].propertyCount}
           bannerSrc={apartmentTypes[0].bannerSrc}
@@ -53,7 +47,7 @@ const ApartmentTypes: FunctionComponent = (): JSX.Element => {
         />
       </div>
       <div>
-        <ApartmentType
+        <ApartmentTypeArea
           title={apartmentTypes[1].title}
           propertyCount={apartmentTypes[1].propertyCount}
           bannerSrc={apartmentTypes[1].bannerSrc}
@@ -61,7 +55,7 @@ const ApartmentTypes: FunctionComponent = (): JSX.Element => {
         />
       </div>
       <div className="md:row-start-2">
-        <ApartmentType
+        <ApartmentTypeArea
           title={apartmentTypes[2].title}
           propertyCount={apartmentTypes[2].propertyCount}
           bannerSrc={apartmentTypes[2].bannerSrc}
@@ -69,7 +63,7 @@ const ApartmentTypes: FunctionComponent = (): JSX.Element => {
         />
       </div>
       <div className="md:row-start-2 md:col-start-2 md:col-span-2">
-        <ApartmentType
+        <ApartmentTypeArea
           title={apartmentTypes[3].title}
           propertyCount={apartmentTypes[3].propertyCount}
           bannerSrc={apartmentTypes[3].bannerSrc}
@@ -77,7 +71,7 @@ const ApartmentTypes: FunctionComponent = (): JSX.Element => {
         />
       </div>
       <div className="row-span-2">
-        <ApartmentType
+        <ApartmentTypeArea
           title={apartmentTypes[4].title}
           propertyCount={apartmentTypes[4].propertyCount}
           bannerSrc={apartmentTypes[4].bannerSrc}

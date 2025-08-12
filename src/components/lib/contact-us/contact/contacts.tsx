@@ -1,14 +1,6 @@
 import type { FunctionComponent, JSX } from "react";
-import ContactItem from "@/components/ui/contact-us/contact/contacts/contact-item";
-
-interface Contacts {
-  picSrc: string;
-  picAlt: string;
-  name: string;
-  position: string;
-  email: string;
-  skype: string;
-}
+import type { ContactsType as Contacts } from "@/lib/types/contact/types";
+import ContactItem from "@/components/ui/contact-us/contact/contact-item";
 
 const Contacts: FunctionComponent = (): JSX.Element => {
   const contacts: Contacts[] = [

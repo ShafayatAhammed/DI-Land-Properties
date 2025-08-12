@@ -1,15 +1,9 @@
 "use client";
 
 import type { FunctionComponent, JSX } from "react";
+import type { ApartmentTypesType as ApartmentTypeProps } from "@/lib/types/home/types";
 import Link from "next/link";
 import Image from "next/image";
-
-interface ApartmentTypeProps {
-  title: string;
-  propertyCount: number;
-  bannerSrc: string;
-  propertiesUrl: string;
-}
 
 const ApartmentType: FunctionComponent<ApartmentTypeProps> = ({
   title,

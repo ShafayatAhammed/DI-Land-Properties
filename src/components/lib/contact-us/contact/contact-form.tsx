@@ -1,11 +1,6 @@
 import type { FunctionComponent, JSX, ReactElement } from "react";
-import ContactFormInput from "@/components/ui/contact-us/contact/contact-form/contact-form-input";
-
-interface ContactFormInput {
-  icon: ReactElement<SVGSVGElement>;
-  placeholder: string;
-  type: "text" | "email" | "tel";
-}
+import type { ContactFormInput } from "@/lib/types/contact/types";
+import ContactFormInputArea from "@/components/ui/contact-us/contact/contact-form-input";
 
 const ContactForm: FunctionComponent = (): JSX.Element => {
   const contactFormInputs: ContactFormInput[] = [
@@ -61,7 +56,7 @@ const ContactForm: FunctionComponent = (): JSX.Element => {
       <h4 className="text-2xl xl-2xl:text-3xl">Contact Form</h4>
       <form className="mt-12 grid md:grid-cols-2 grid-rows-6 md:grid-rows-3 gap-6">
         <div className="w-full h-[50px] relative">
-          <ContactFormInput
+          <ContactFormInputArea
             placeholder={contactFormInputs[0].placeholder}
             icon={contactFormInputs[0].icon}
             type={contactFormInputs[0].type}
@@ -74,14 +69,14 @@ const ContactForm: FunctionComponent = (): JSX.Element => {
           ></textarea>
         </div>
         <div className="w-full h-[50px] relative">
-          <ContactFormInput
+          <ContactFormInputArea
             placeholder={contactFormInputs[1].placeholder}
             icon={contactFormInputs[1].icon}
             type={contactFormInputs[1].type}
           />
         </div>
         <div className="w-full h-[50px] relative">
-          <ContactFormInput
+          <ContactFormInputArea
             placeholder={contactFormInputs[2].placeholder}
             icon={contactFormInputs[2].icon}
             type={contactFormInputs[2].type}

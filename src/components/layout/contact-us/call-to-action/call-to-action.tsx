@@ -1,14 +1,9 @@
-import type { FunctionComponent, JSX, ReactElement } from "react";
+import type { FunctionComponent, JSX } from "react";
+import type { CallToActionType as CallToAction } from "@/lib/types/contact/types";
 import CallToActionItem from "@/components/ui/contact-us/call-to-action/call-to-action-item";
 
-interface Actions {
-  icon: ReactElement<SVGSVGElement>;
-  title: string;
-  description: string;
-}
-
 const CallToAction: FunctionComponent = (): JSX.Element => {
-  const actions: Actions[] = [
+  const callToActions: CallToAction[] = [
     {
       icon: (
         <svg
@@ -46,7 +41,7 @@ const CallToAction: FunctionComponent = (): JSX.Element => {
   return (
     <section className="w-full px-[17px] sm:px-7 md:px-14 xl:px-28 py-[50px] lg-xl:py-[100px] bg-[url(/call-to-action-bg.jpg)] bg-no-repeat bg-center bg-cover">
       <div className="mx-auto max-w-[1536px] flex flex-col lg-xl:flex-row gap-8">
-        {actions.map(({ icon, title, description }): JSX.Element => {
+        {callToActions.map(({ icon, title, description }): JSX.Element => {
           return (
             <CallToActionItem
               key={title}
