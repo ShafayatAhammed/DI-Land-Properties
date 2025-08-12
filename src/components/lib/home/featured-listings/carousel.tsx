@@ -3,24 +3,15 @@
 import { type FunctionComponent, type JSX, useRef, RefObject } from "react";
 import SwiperType from "swiper";
 import useWindowWidth from "@/hooks/use-window-width";
+import type { HeroFeatListingsPrptRentType as CarouselItemType } from "@/lib/types/home/types";
 import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import CarouselItem from "@/components/ui/home/featured-listings/carousel-item";
+import CarouselItem from "@/components/ui/home/feat-listings-prpt-rent/feat-listings-prpt-rent-item";
 import CarouselButton from "@/components/ui/home/featured-listings/carousel-button";
-
-interface Carousel {
-  bannerSrc: string;
-  title: string;
-  beds: number;
-  baths: number;
-  sqft: number;
-  price: string;
-  listingUrl: string;
-}
 
 const Carousel: FunctionComponent = (): JSX.Element => {
   const swiperRef: RefObject<SwiperType | null> = useRef<SwiperType | null>(
@@ -29,7 +20,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
 
   const width = useWindowWidth();
 
-  const carousels: Carousel[] = [
+  const carouselItems: Omit<CarouselItemType, "section">[] = [
     {
       bannerSrc: "/carousel-banner-1.jpg",
       title: "Awesome Family Home",
@@ -89,7 +80,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
         modules={[Autoplay, Pagination, Navigation]}
         className="z-50"
       >
-        {carousels.map(
+        {carouselItems.map(
           ({
             bannerSrc,
             title,
@@ -109,6 +100,7 @@ const Carousel: FunctionComponent = (): JSX.Element => {
                   sqft={sqft}
                   price={price}
                   listingUrl={listingUrl}
+                  section="carousel"
                 />
               </SwiperSlide>
             );

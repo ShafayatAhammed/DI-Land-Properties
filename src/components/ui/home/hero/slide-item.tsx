@@ -1,31 +1,22 @@
 "use client";
 
 import type { FunctionComponent, JSX } from "react";
+import type { HeroFeatListingsPrptRentType as SlideItemProps } from "@/lib/types/home/types";
 import Link from "next/link";
 
-interface SlideItemProps {
-  bannerUrl: string;
-  title: string;
-  beds: number;
-  baths: number;
-  sqft: number;
-  price: string;
-  listingUrl: string;
-}
-
-const SlideItem: FunctionComponent<SlideItemProps> = ({
-  bannerUrl,
+const SlideItem: FunctionComponent<Omit<SlideItemProps, "section">> = ({
+  bannerSrc,
   title,
   beds,
   baths,
   sqft,
   price,
   listingUrl,
-}: SlideItemProps): JSX.Element => {
+}: Omit<SlideItemProps, "section">): JSX.Element => {
   return (
     <div
       className={`bg-no-repeat bg-center bg-cover relative w-full h-full`}
-      style={{ backgroundImage: `url(${bannerUrl})` }}
+      style={{ backgroundImage: `url(${bannerSrc})` }}
     >
       <div className="w-full h-full absolute inset-0 bg-black/50 px-[17px] sm:px-7 md:px-14 xl:px-28">
         <div className="mx-auto max-w-[1536px] w-full h-full text-white flex flex-col gap-2 md:gap-4 items-center justify-center text-center">

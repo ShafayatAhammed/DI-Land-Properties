@@ -2,6 +2,7 @@
 
 import { type FunctionComponent, type JSX, useRef, RefObject } from "react";
 import SwiperType from "swiper";
+import type { HeroFeatListingsPrptRentType as Slide } from "@/lib/types/home/types";
 import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,24 +12,14 @@ import { SwiperSlide } from "swiper/react";
 import SlideItem from "@/components/ui/home/hero/slide-item";
 import SlideButton from "@/components/ui/home/hero/slide-button";
 
-interface Slide {
-  bannerUrl: string;
-  title: string;
-  beds: number;
-  baths: number;
-  sqft: number;
-  price: string;
-  listingUrl: string;
-}
-
 const Slide: FunctionComponent = (): JSX.Element => {
   const swiperRef: RefObject<SwiperType | null> = useRef<SwiperType | null>(
     null
   );
 
-  const slides: Slide[] = [
+  const slides: Omit<Slide, "section">[] = [
     {
-      bannerUrl: "/hero-banner-1-2.jpg",
+      bannerSrc: "/hero-banner-1-2.jpg",
       title: "Awesome Family Home",
       beds: 281,
       baths: 287,
@@ -37,7 +28,7 @@ const Slide: FunctionComponent = (): JSX.Element => {
       listingUrl: "/",
     },
     {
-      bannerUrl: "/hero-banner-1-2.jpg",
+      bannerSrc: "/hero-banner-1-2.jpg",
       title: "Studio on Grand Avenue",
       beds: 281,
       baths: 287,
@@ -46,7 +37,7 @@ const Slide: FunctionComponent = (): JSX.Element => {
       listingUrl: "/",
     },
     {
-      bannerUrl: "/hero-banner-3.jpg",
+      bannerSrc: "/hero-banner-3.jpg",
       title: "Studio on lrvington",
       beds: 285,
       baths: 291,
@@ -79,7 +70,7 @@ const Slide: FunctionComponent = (): JSX.Element => {
       >
         {slides.map(
           ({
-            bannerUrl,
+            bannerSrc,
             title,
             beds,
             baths,
@@ -90,7 +81,7 @@ const Slide: FunctionComponent = (): JSX.Element => {
             return (
               <SwiperSlide key={title}>
                 <SlideItem
-                  bannerUrl={bannerUrl}
+                  bannerSrc={bannerSrc}
                   title={title}
                   beds={beds}
                   baths={baths}
