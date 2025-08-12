@@ -27,8 +27,8 @@ const ContactItem: FunctionComponent<ContactItemProps> = ({
         <Image
           src={picSrc}
           alt={picAlt}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           className="w-[150px] h-[150px] lg-xl-2:w-[100px] lg-xl-2:h-[100px] xl-2xl:w-[110px] xl-2xl:h-[110px] border-2 border-gray-200"
         />
       </div>
