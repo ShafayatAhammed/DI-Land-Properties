@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX } from "react";
-import ContactItem from "../../../../components/ui/contact-us/contact/contacts/contact-item";
+import ContactItem from "@/components/ui/contact-us/contact/contacts/contact-item";
 
 interface Contacts {
   picSrc: string;

@@ -1,6 +1,6 @@
 import type { FunctionComponent, JSX } from "react";
-import ContactForm from "../../../../components/lib/contact-us/contact/contact-form";
-import Contacts from "../../../../components/lib/contact-us/contact/contacts";
+import ContactForm from "@/components/lib/contact-us/contact/contact-form";
+import Contacts from "@/components/lib/contact-us/contact/contacts";
 
 const Contact: FunctionComponent = (): JSX.Element => {
   return (

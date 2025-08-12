@@ -1,4 +1,4 @@
-import { type HeaderContextType, HeaderContext } from "../../../context/header/context";
+import { type HeaderContextType, HeaderContext } from "@/context/header/context";
 import { useContext } from "react";
 
 const useHeader = () => {

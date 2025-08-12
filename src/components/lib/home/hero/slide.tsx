@@ -8,8 +8,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { SwiperSlide } from "swiper/react";
-import SlideItem from "../../../../components/ui/home/hero/slide-item";
-import SlideButton from "../../../../components/ui/home/hero/slide-button";
+import SlideItem from "@/components/ui/home/hero/slide-item";
+import SlideButton from "@/components/ui/home/hero/slide-button";
 
 interface Slide {
   bannerUrl: string;

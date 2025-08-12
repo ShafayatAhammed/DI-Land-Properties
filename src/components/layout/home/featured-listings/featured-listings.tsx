@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX } from "react";
-import Carousel from "../../../../components/lib/home/featured-listings/carousel";
+import Carousel from "@/components/lib/home/featured-listings/carousel";
 
 const FeaturedListings: FunctionComponent = (): JSX.Element => {
   return (

@@ -2,9 +2,9 @@
 
 import type { FunctionComponent, JSX } from "react";
 import { usePathname } from "next/navigation";
-import { navMenuItems } from "../../../../lib/data/nav-menu/data";
-import { isActive } from "../../../../lib/utils/nav-menu/utils";
-import NavMenuItem from "../../../../components/ui/header/nav-menu/nav-menu-item";
+import { navMenuItems } from "@/lib/data/nav-menu/data";
+import { isActive } from "@/lib/utils/nav-menu/utils";
+import NavMenuItem from "@/components/ui/header/nav-menu/nav-menu-item";
 
 const NavMenu: FunctionComponent = (): JSX.Element => {
   const currentPath: string = usePathname();

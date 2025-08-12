@@ -2,15 +2,15 @@
 
 import { type FunctionComponent, type JSX, useRef, RefObject } from "react";
 import SwiperType from "swiper";
-import useWindowWidth from "../../../../hooks/use-window-width";
+import useWindowWidth from "@/hooks/use-window-width";
 import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import CarouselItem from "../../../../components/ui/home/featured-listings/carousel-item";
-import CarouselButton from "../../../../components/ui/home/featured-listings/carousel-button";
+import CarouselItem from "@/components/ui/home/featured-listings/carousel-item";
+import CarouselButton from "@/components/ui/home/featured-listings/carousel-button";
 
 interface Carousel {
   bannerSrc: string;

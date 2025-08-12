@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX } from "react";
-import Slide from "../../../../components/lib/home/hero/slide";
+import Slide from "@/components/lib/home/hero/slide";
 
 const Hero: FunctionComponent = (): JSX.Element => {
   return (

@@ -8,13 +8,13 @@ import {
   useEffect,
 } from "react";
 import { usePathname } from "next/navigation";
-import { navMenuItems } from "../../../../lib/data/nav-menu/data";
-import type { HeaderContextType } from "../../../../context/header/context";
-import useHeader from "../../../../hooks/context/header/hooks";
-import { isActive } from "../../../../lib/utils/nav-menu/utils";
-import NavMenuItem from "../../../../components/ui/header/nav-menu/nav-menu-item";
-import ActionButton from "../../../../components/ui/header/action/action-button";
-import SideNavMenuClose from "../../../../components/ui/header/nav-menu/side-nav-menu-close";
+import { navMenuItems } from "@/lib/data/nav-menu/data";
+import type { HeaderContextType } from "@/context/header/context";
+import useHeader from "@/hooks/context/header/hooks";
+import { isActive } from "@/lib/utils/nav-menu/utils";
+import NavMenuItem from "@/components/ui/header/nav-menu/nav-menu-item";
+import ActionButton from "@/components/ui/header/action/action-button";
+import SideNavMenuClose from "@/components/ui/header/nav-menu/side-nav-menu-close";
 
 const SideNavMenu: FunctionComponent = (): JSX.Element => {
   const currentPath: string = usePathname();
