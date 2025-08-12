@@ -1,11 +1,4 @@
-import type { isActiveFunc } from "@/lib/types/nav-menu/types";
-
-interface NavMenuItem {
-  href: string;
-  label: string;
-  active?: boolean;
-  setActive: (isActive: isActiveFunc, currentPath: string) => void;
-}
+import type { NavMenuItem, isActiveFunc } from "@/lib/types/header/types";
 
 const navMenuItems: NavMenuItem[] = [
   {

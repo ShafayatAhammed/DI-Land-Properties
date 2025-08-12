@@ -1,17 +1,9 @@
 "use client";
 
 import type { FunctionComponent, JSX } from "react";
+import type { ContactsType as ContactItemProps } from "@/lib/types/contact/types";
 import Image from "next/image";
 import Link from "next/link";
-
-interface ContactItemProps {
-  picSrc: string;
-  picAlt: string;
-  name: string;
-  position: string;
-  email: string;
-  skype: string;
-}
 
 const ContactItem: FunctionComponent<ContactItemProps> = ({
   picSrc,

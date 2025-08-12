@@ -2,8 +2,8 @@
 
 import type { FunctionComponent, JSX } from "react";
 import { usePathname } from "next/navigation";
-import { navMenuItems } from "@/lib/data/nav-menu/data";
-import { isActive } from "@/lib/utils/nav-menu/utils";
+import { navMenuItems } from "@/lib/data/header/data";
+import { isActive } from "@/lib/utils/header/utils";
 import NavMenuItem from "@/components/ui/header/nav-menu/nav-menu-item";
 
 const NavMenu: FunctionComponent = (): JSX.Element => {

@@ -1,10 +1,5 @@
 import type { FunctionComponent, JSX, ReactElement } from "react";
-
-interface ContactFormInputProps {
-  icon: ReactElement<SVGSVGElement>;
-  placeholder: string;
-  type: "text" | "email" | "tel";
-}
+import type { ContactFormInput as ContactFormInputProps } from "@/lib/types/contact/types";
 
 const ContactFormInput: FunctionComponent<ContactFormInputProps> = ({
   icon,
