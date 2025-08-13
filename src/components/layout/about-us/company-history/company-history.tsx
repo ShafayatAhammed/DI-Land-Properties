@@ -16,7 +16,7 @@ const CompanyHistory: FunctionComponent = (): JSX.Element => {
               alt="Company History Banner"
               width={540}
               height={540}
-              className="w-full h-auto"
+              className="w-full h-full"
             />
           </div>
           <CompanyHistoryArea />

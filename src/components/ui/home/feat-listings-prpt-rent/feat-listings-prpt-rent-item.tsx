@@ -34,7 +34,7 @@ const FeatListingsPrptRentItem: FunctionComponent<
             alt="Carousel Item Banner"
             width={502}
             height={502}
-            className="w-full h-full rounded-t-md"
+            className="w-full aspect-[16/11] rounded-t-md"
           />
         </div>
         <div className="flex flex-col gap-1 p-5 px-2.5 xs:px-5">
