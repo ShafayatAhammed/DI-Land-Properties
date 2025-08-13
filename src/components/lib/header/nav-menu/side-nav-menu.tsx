@@ -68,7 +68,7 @@ const SideNavMenu: FunctionComponent = (): JSX.Element => {
                     href={href}
                     label={label}
                     active={active!}
-                    area="small"
+                    area="side-nav-menu"
                   />
                 </li>
               );

@@ -1,6 +1,6 @@
 import type { FunctionComponent, JSX } from "react";
-import OfficeDetails from "@/components/lib/contact-us/office/office-details";
-import OfficeMapView from "@/components/lib/contact-us/office/office-map-view";
+import OfficeDetails from "@/components/lib/office/office-details";
+import OfficeMapView from "@/components/lib/office/office-map-view";
 
 const Office: FunctionComponent = (): JSX.Element => {
   return (

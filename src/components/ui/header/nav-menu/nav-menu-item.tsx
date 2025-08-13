@@ -7,7 +7,7 @@ interface NavMenuItemProps {
   href: string;
   label: string;
   active: boolean;
-  area: "small" | "large";
+  area: "nav-menu" | "side-nav-menu";
 }
 
 const NavMenuItem: FunctionComponent<NavMenuItemProps> = ({
@@ -24,7 +24,7 @@ const NavMenuItem: FunctionComponent<NavMenuItemProps> = ({
         active
           ? "text-white bg-blue-1"
           : "text-primary-text hover:text-white bg-white hover:bg-blue-1 transition duration-300"
-      } px-[15px] py-[9px] ${area === "small" ? "block" : ""}`}
+      } px-[15px] py-[9px] ${area === "side-nav-menu" ? "block" : ""}`}
     >
       {label}
     </Link>

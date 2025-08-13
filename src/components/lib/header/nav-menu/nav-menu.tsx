@@ -23,7 +23,7 @@ const NavMenu: FunctionComponent = (): JSX.Element => {
                 href={href}
                 label={label}
                 active={active!}
-                area="large"
+                area="nav-menu"
               />
             </li>
           );

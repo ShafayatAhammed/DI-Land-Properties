@@ -78,7 +78,7 @@ const OfficeDetails: FunctionComponent = (): JSX.Element => {
             </div>
             <div>
               <p className="text-[15px] xl-2xl:text-[17px] xs-2:break-all">
-                Dakshinkhan Bazar, Dhaka 1230, Dhaka, Bangladesh
+                Dakshin Khan Bazar, Dhaka 1230, Dhaka, Bangladesh
               </p>
             </div>
           </div>
