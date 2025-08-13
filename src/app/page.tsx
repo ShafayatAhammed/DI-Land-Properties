@@ -3,6 +3,7 @@ import Hero from "@/components/layout/home/hero/hero";
 import FeaturedListings from "@/components/layout/home/featured-listings/featured-listings";
 import ApartmentTypes from "@/components/layout/home/apartment-types/apartment-types";
 import PropertiesForRent from "@/components/layout/home/properties-for-rent/properties-for-rent";
+import InquiryWhyChoose from "@/components/layout/home/inquiry-why-choose/inquiry-why-choose";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
@@ -11,6 +12,7 @@ const Home: FunctionComponent = (): JSX.Element => {
       <FeaturedListings />
       <ApartmentTypes />
       <PropertiesForRent />
+      <InquiryWhyChoose />
     </>
   );
 };

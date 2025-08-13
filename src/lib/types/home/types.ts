@@ -16,4 +16,11 @@ interface ApartmentTypesType {
   propertiesUrl: string;
 }
 
-export type { HeroFeatListingsPrptRentType, ApartmentTypesType };
+interface WhyChooseType {
+  iconSrc: string;
+  iconAlt: string;
+  title: string;
+  description: string;
+}
+
+export type { HeroFeatListingsPrptRentType, ApartmentTypesType, WhyChooseType };
