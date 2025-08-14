@@ -1,6 +1,6 @@
 import type { FunctionComponent, JSX } from "react";
 import SectionHeader from "@/components/lib/home/section-header/section-header";
-import Carousel from "@/components/lib/home/featured-listings/carousel";
+import FeaturedListingsArea from "@/components/lib/home/featured-listings/featured-listings";
 
 const FeaturedListings: FunctionComponent = (): JSX.Element => {
   return (
@@ -12,7 +12,7 @@ const FeaturedListings: FunctionComponent = (): JSX.Element => {
             within the city"
         />
         <div>
-          <Carousel />
+          <FeaturedListingsArea />
         </div>
       </div>
     </section>

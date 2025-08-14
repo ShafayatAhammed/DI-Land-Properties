@@ -1,9 +1,9 @@
 import type { FunctionComponent, JSX } from "react";
-import type { ContactsType as Contacts } from "@/lib/types/contact/types";
-import ContactItem from "@/components/ui/contact-us/contact/contact-item";
+import type { ContactsType as ContactType } from "@/lib/types/contact/types";
+import Contact from "@/components/ui/contact-us/contacts/contact";
 
 const Contacts: FunctionComponent = (): JSX.Element => {
-  const contacts: Contacts[] = [
+  const contacts: ContactType[] = [
     {
       picSrc: "/contact-man.jpg",
       picAlt: "Head of communications, Man",
@@ -29,7 +29,7 @@ const Contacts: FunctionComponent = (): JSX.Element => {
         {contacts.map(
           ({ picSrc, picAlt, name, position, email, skype }): JSX.Element => {
             return (
-              <ContactItem
+              <Contact
                 key={name}
                 picSrc={picSrc}
                 picAlt={picAlt}

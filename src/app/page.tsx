@@ -1,18 +1,20 @@
 import type { FunctionComponent, JSX } from "react";
 import Hero from "@/components/layout/home/hero/hero";
 import FeaturedListings from "@/components/layout/home/featured-listings/featured-listings";
-import ApartmentTypes from "@/components/layout/home/apartment-types/apartment-types";
-import PropertiesForRent from "@/components/layout/home/properties-for-rent/properties-for-rent";
-import InquiryWhyChoose from "@/components/layout/home/inquiry-why-choose/inquiry-why-choose";
+import Apartments from "@/components/layout/home/apartments/apartments";
+import FeaturedRentals from "@/components/layout/home/featured-rentals/featured-rentals";
+import GetStarted from "@/components/layout/home/get-started/get-started";
+import Testimonials from "@/components/layout/home/testimonials/testimonials";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
     <>
       <Hero />
       <FeaturedListings />
-      <ApartmentTypes />
-      <PropertiesForRent />
-      <InquiryWhyChoose />
+      <Apartments />
+      <FeaturedRentals />
+      <GetStarted />
+      <Testimonials />
     </>
   );
 };

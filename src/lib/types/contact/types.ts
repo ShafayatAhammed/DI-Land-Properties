@@ -1,12 +1,12 @@
 import type { ReactElement } from "react";
 
-interface CallToActionType {
+interface ActionType {
   icon: ReactElement<SVGSVGElement>;
   title: string;
   description: string;
 }
 
-interface ContactFormInput {
+interface ContactFormInputType {
   icon: ReactElement<SVGSVGElement>;
   placeholder: string;
   type: "text" | "email" | "tel";
@@ -21,4 +21,4 @@ interface ContactsType {
   skype: string;
 }
 
-export type { CallToActionType, ContactFormInput, ContactsType };
+export type { ActionType, ContactFormInputType, ContactsType };

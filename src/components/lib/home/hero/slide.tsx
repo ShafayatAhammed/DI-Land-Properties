@@ -2,7 +2,7 @@
 
 import { type FunctionComponent, type JSX, useRef, RefObject } from "react";
 import SwiperType from "swiper";
-import type { HeroFeatListingsPrptRentType as Slide } from "@/lib/types/home/types";
+import type { ShowcaseType as Slide } from "@/lib/types/home/types";
 import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

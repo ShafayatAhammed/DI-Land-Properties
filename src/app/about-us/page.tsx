@@ -1,20 +1,20 @@
 import type { FunctionComponent, JSX } from "react";
 import TitleBox from "@/components/layout/title-box/title-box";
-import CompanyHistory from "@/components/layout/about-us/company-history/company-history";
-import OurLeadership from "@/components/layout/about-us/our-leadership/our-leadership";
+import History from "@/components/layout/about-us/history/history";
+import Leadership from "@/components/layout/about-us/leadership/leadership";
 import Office from "@/components/layout/office/office";
-import WorkingWithUs from "@/components/layout/about-us/working-with-us/working-with-us";
+import WorkWithUs from "@/components/layout/about-us/work-with-us/work-with-us";
 
 const AboutUs: FunctionComponent = (): JSX.Element => {
   return (
     <>
       <TitleBox title="About Us" />
-      <CompanyHistory />
-      <OurLeadership />
+      <History />
+      <Leadership />
       <div className="w-auto h-auto border-b-2 border-gray-200">
         <Office />
       </div>
-      <WorkingWithUs />
+      <WorkWithUs />
     </>
   );
 };

@@ -1,4 +1,4 @@
-interface OurLeadershipType {
+interface LeadershipType {
   picSrc: string;
   name: string;
   position: string;
@@ -12,9 +12,9 @@ interface OurLeadershipType {
   email: string;
 }
 
-interface WorkingWithUsType {
+interface WorkWithUsType {
   bannerSrc: string;
   title: string;
 }
 
-export type { OurLeadershipType, WorkingWithUsType };
+export type { LeadershipType, WorkWithUsType };
