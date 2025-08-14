@@ -1,7 +1,7 @@
 "use client";
 
 import type { FunctionComponent, JSX } from "react";
-import type { HeroFeatListingsPrptRentType as SlideItemProps } from "@/lib/types/home/types";
+import type { ShowcaseType as SlideItemProps } from "@/lib/types/home/types";
 import Link from "next/link";
 
 const SlideItem: FunctionComponent<Omit<SlideItemProps, "section">> = ({
