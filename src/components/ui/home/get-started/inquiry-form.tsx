@@ -80,7 +80,7 @@ const InquiryForm: FunctionComponent = (): JSX.Element => {
       </div>
       <button
         type="submit"
-        className="bg-blue-1 rounded-lg hover:bg-blue-2 transition-colors text-white py-3 cursor-pointer text-base xl-2xl:text-lg"
+        className="bg-blue-1 rounded-lg hover:bg-blue-2 transition-colors text-white py-3 cursor-pointer text-base xl-2xl:text-lg outline-none"
       >
         Submit
       </button>
