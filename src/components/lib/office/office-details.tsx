@@ -77,9 +77,9 @@ const OfficeDetails: FunctionComponent = (): JSX.Element => {
               </svg>
             </div>
             <div>
-              <p className="text-[15px] xl-2xl:text-[17px] xs-2:break-all">
-                Dakshin Khan Bazar, Dhaka 1230, Dhaka, Bangladesh
-              </p>
+              <address className="text-[15px] xl-2xl:text-[17px] xs-2:break-all">
+                Dakshin Khan Bazar, Dakshin Khan, Dhaka 1230, Dhaka, Bangladesh
+              </address>
             </div>
           </div>
           <div className="flex gap-2 items-center xs:items-start xs-2:items-center flex-row xs:flex-col xs-2:flex-row mt-3">

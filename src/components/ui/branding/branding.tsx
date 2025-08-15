@@ -13,6 +13,7 @@ const Branding: FunctionComponent = (): JSX.Element => {
         className="w-[205px] h-[42px] xl-2xl:w-[210px] xl-2xl:h-[47px]"
         width={210}
         height={47}
+        priority={true}
       />
     </Link>
   );

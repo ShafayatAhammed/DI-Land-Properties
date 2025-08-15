@@ -4,6 +4,7 @@ import "@/app/globals.css";
 import { banglaFont } from "@/fonts/bangla-fonts/fonts";
 import { HeaderProvider } from "@/context/header/context";
 import Header from "@/components/layout/header/header";
+import Footer from "@/components/layout/footer/footer";
 
 export const metadata: Metadata = {
   title:
@@ -24,6 +25,7 @@ const RootLayout: FunctionComponent<RootLayoutProps> = ({
           <Header />
         </HeaderProvider>
         {children}
+        <Footer />
       </body>
     </html>
   );
