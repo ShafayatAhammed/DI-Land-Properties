@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import type { GetStartedType as GetStartedItemProps } from "@/lib/types/home/types";
 import Image from "next/image";

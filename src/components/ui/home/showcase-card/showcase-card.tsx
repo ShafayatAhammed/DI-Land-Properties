@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import type { ShowcaseType as ShowcaseCardType } from "@/lib/types/home/types";
 import Link from "next/link";
@@ -18,7 +16,6 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
   const bedsStr = beds.toString();
   const bathsStr = baths.toString();
   const sqftStr = sqft.toString();
-  const priceStr = price.toString();
 
   return (
     <Link
@@ -41,7 +38,7 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
               section === "carousel" ? "sm-md:text-xl" : "md:text-xl"
             } xl-2xl:[font-size:24px_!important] group-hover:underline`}
           >
-            {title.length > 25 ? title.slice(0, 25) + "..." : title}
+            {title.length > 25 ? title.slice(0, 25) : title}
           </h5>
           <div className="flex justify-between gap-5 items-center">
             <div
@@ -66,7 +63,7 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
                   </svg>
                 </span>
                 <span>
-                  {bedsStr.length > 1 ? bedsStr.slice(0, 2) + "..." : bedsStr}
+                  {bedsStr.length > 1 ? bedsStr.slice(0, 2) : bedsStr}
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -87,7 +84,7 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
                 </span>
                 <span>
                   {bathsStr.length > 1
-                    ? bathsStr.slice(0, 2) + "..."
+                    ? bathsStr.slice(0, 2)
                     : bathsStr}
                 </span>
               </div>
@@ -108,7 +105,7 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
                   </svg>
                 </span>
                 <span>
-                  {sqftStr.length > 4 ? sqftStr.slice(0, 4) + "..." : sqftStr}
+                  {sqftStr.length > 4 ? sqftStr.slice(0, 4) : sqftStr}
                 </span>
               </div>
             </div>
@@ -117,9 +114,7 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
                 section === "carousel" ? "sm-md:text-xl" : "md:text-xl"
               } xl-2xl:[font-size:24px_!important] text-blue-1`}
             >
-              <p>
-                {priceStr.length > 8 ? priceStr.slice(0, 8) + "..." : priceStr}
-              </p>
+              <p>{price.length > 8 ? price.slice(0, 8) : price}</p>
             </div>
           </div>
         </div>

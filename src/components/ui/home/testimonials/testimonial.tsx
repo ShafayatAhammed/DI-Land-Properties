@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import type { TestimonialsType as TestimonialProps } from "@/lib/types/home/types";
 import Image from "next/image";

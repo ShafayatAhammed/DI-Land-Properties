@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import type { WorkWithUsType as WorkWithUsItemType } from "@/lib/types/about-us/types";
 import Image from "next/image";

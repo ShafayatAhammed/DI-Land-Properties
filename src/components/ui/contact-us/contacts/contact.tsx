@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import type { ContactsType as ContactProps } from "@/lib/types/contact/types";
 import Image from "next/image";

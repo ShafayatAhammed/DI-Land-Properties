@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import type { ApartmentsType as ApartmentProps } from "@/lib/types/home/types";
 import Link from "next/link";
@@ -17,7 +15,7 @@ const Apartment: FunctionComponent<ApartmentProps> = ({
       className="select-none inline-block w-full h-full relative group"
     >
       <div className="w-full h-full rounded-md">
-        <div className="z-50 rounded-md w-full h-full">
+        <div className="z-40 rounded-md w-full h-full">
           <Image
             src={bannerSrc}
             alt="Apartment Type Banner"
@@ -26,7 +24,7 @@ const Apartment: FunctionComponent<ApartmentProps> = ({
             className="w-full h-full rounded-md group-hover:scale-102 transition-all"
           />
         </div>
-        <div className="absolute inset-0 bg-black/50 z-50 rounded-md flex items-end group-hover:scale-102 transition-all w-full h-full p-8">
+        <div className="absolute inset-0 bg-black/50 z-40 rounded-md flex items-end group-hover:scale-102 transition-all w-full h-full p-8">
           <div>
             <div className="flex items-center relative">
               <h4 className="text-white text-4xl md:text-3xl xl-2xl:[font-size:36px_!important] leading-7">

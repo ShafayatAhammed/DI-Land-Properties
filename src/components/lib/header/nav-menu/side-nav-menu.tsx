@@ -46,7 +46,7 @@ const SideNavMenu: FunctionComponent = (): JSX.Element => {
 
   return (
     <aside
-      className={`fixed top-0 left-0 w-full h-full z-[100] select-none
+      className={`fixed top-0 left-0 w-full h-full z-50 select-none
     transition-opacity duration-300 ease-out
     ${
       isSidebarNavMenuOpen

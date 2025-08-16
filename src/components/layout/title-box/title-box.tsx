@@ -8,7 +8,7 @@ const TitleBox: FunctionComponent<TitleBoxProps> = ({
   title,
 }: TitleBoxProps): JSX.Element => {
   return (
-    <section className="mt-[81px] sm:mt-[84px] lg-xl:mt-[83px] xl-2xl:mt-[88px] w-full h-[200px] bg-[url(/title-box-bg.jpg)] bg-no-repeat bg-center bg-cover relative">
+    <section className="w-full h-[200px] bg-[url(/title-box-bg.jpg)] bg-no-repeat bg-center bg-cover relative">
       <div className="w-full h-full absolute inset-0 bg-black/50 px-[17px] sm:px-7 md:px-14 xl:px-28">
         <div className="flex items-center mx-auto max-w-[1536px] w-full h-full ">
           <h1 className="text-white text-[44px] sm:text-[50px] xl-2xl:[font-size:60px_!important]">

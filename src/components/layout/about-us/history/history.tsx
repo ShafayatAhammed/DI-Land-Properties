@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import Image from "next/image";
 import HistoryArea from "@/components/lib/about-us/history/history";

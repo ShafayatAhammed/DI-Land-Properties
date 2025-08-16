@@ -11,7 +11,7 @@ const InquiryForm: FunctionComponent = (): JSX.Element => {
           id="inquiry-type"
           className="py-3 px-4 xl-2xl:py-4 xl-2xl:px-5 pe-9 w-full border border-gray-200 rounded-lg outline-none mt-2 text-base xl-2xl:text-lg"
         >
-          <option>Select value</option>
+          <option>Select</option>
           <option>Apartments</option>
           <option>Offices</option>
           <option>Houses</option>

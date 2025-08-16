@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import SectionHeader from "@/components/lib/home/section-header/section-header";
 import FeaturedRentalsArea from "@/components/lib/home/featured-rentals/featured-rentals";

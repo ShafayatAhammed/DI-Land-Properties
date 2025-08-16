@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import type { LeadershipType as LeadershipItemProps } from "@/lib/types/about-us/types";
 import Image from "next/image";

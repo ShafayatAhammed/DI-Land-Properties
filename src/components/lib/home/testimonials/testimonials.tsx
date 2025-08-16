@@ -63,7 +63,7 @@ const Testimonials: FunctionComponent = (): JSX.Element => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="z-50"
+        className="z-40"
       >
         {testimonials.map(({ picSrc, name, position, review }): JSX.Element => {
           return (
@@ -78,7 +78,7 @@ const Testimonials: FunctionComponent = (): JSX.Element => {
           );
         })}
       </Swiper>
-      <div className="absolute bottom-5 z-50 w-full flex justify-between">
+      <div className="absolute bottom-5 z-40 w-full flex justify-between">
         <CarouselButton name="prev" swiperRef={swiperRef} />
         <CarouselButton name="next" swiperRef={swiperRef} />
       </div>

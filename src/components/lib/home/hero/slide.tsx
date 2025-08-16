@@ -66,7 +66,7 @@ const Slide: FunctionComponent = (): JSX.Element => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="w-[100%_!important] h-[500px_!important] xl-2xl:h-[600px_!important] z-50"
+        className="w-[100%_!important] h-[500px_!important] xl-2xl:h-[600px_!important] z-40"
       >
         {slides.map(
           ({
@@ -95,7 +95,7 @@ const Slide: FunctionComponent = (): JSX.Element => {
         )}
       </Swiper>
 
-      <div className="absolute bottom-0 left-0 w-full h-auto z-50 px-[17px] sm:px-7 md:px-14 xl:px-28 mb-10">
+      <div className="absolute bottom-0 left-0 w-full h-auto z-40 px-[17px] sm:px-7 md:px-14 xl:px-28 mb-10">
         <div className="flex justify-between items-center mx-auto max-w-[1536px]">
           <SlideButton name="prev" swiperRef={swiperRef} />
           <SlideButton name="next" swiperRef={swiperRef} />

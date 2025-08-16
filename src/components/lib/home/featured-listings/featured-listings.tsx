@@ -20,11 +20,11 @@ const FeaturedListings: FunctionComponent = (): JSX.Element => {
   const featuredListings: Omit<FeaturedListingType, "section">[] = [
     {
       bannerSrc: "/carousel-banner-1.jpg",
-      title: "Awesome Family Home",
-      beds: 1,
-      baths: 1,
-      sqft: 1200,
-      price: "$450,000",
+      title: "Awesome Family Homesdfjlsdjflsjfljsdfsdfsad",
+      beds: 12,
+      baths: 12,
+      sqft: 12002,
+      price: "$450,0002",
       listingUrl: "/",
     },
     {
@@ -80,7 +80,7 @@ const FeaturedListings: FunctionComponent = (): JSX.Element => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="z-50"
+        className="z-40"
       >
         {featuredListings.map(
           ({
@@ -110,7 +110,7 @@ const FeaturedListings: FunctionComponent = (): JSX.Element => {
         )}
       </Swiper>
 
-      <div className="absolute top-1/2 -translate-y-1/2 z-50 w-full flex items-center">
+      <div className="absolute top-1/2 -translate-y-1/2 z-40 w-full flex items-center">
         <div className="absolute -left-2">
           <CarouselButton name="prev" swiperRef={swiperRef} />
         </div>

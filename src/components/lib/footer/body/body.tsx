@@ -1,5 +1,3 @@
-"use client";
-
 import type { FunctionComponent, JSX } from "react";
 import BodyItem from "@/components/ui/footer/body/body-item";
 import Link from "next/link";
