@@ -9,10 +9,10 @@ const navMenuItems: NavMenuItem[] = [
     },
   },
   {
-    href: "/listing",
-    label: "Listing",
+    href: "/listings",
+    label: "Listings",
     setActive(isActive: isActiveFunc, currentPath: string) {
-      this.active = isActive("/listing", currentPath);
+      this.active = isActive("/listings", currentPath);
     },
   },
   {

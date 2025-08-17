@@ -1,5 +1,5 @@
-import type { FunctionComponent, JSX, ReactElement } from "react";
-import type { ContactFormInputType as ContactFormInputProps } from "@/lib/types/contact/types";
+import type { FunctionComponent, JSX } from "react";
+import type { ContactFormInputType as ContactFormInputProps } from "@/lib/types/contact-form-input/types";
 
 const ContactFormInput: FunctionComponent<ContactFormInputProps> = ({
   icon,

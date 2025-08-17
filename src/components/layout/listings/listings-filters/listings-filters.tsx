@@ -1,6 +1,6 @@
 import type { FunctionComponent, JSX } from "react";
 
-const ListingFilters: FunctionComponent<{ area: "toolbar" | "sidebar" }> = ({
+const ListingsFilters: FunctionComponent<{ area: "toolbar" | "sidebar" }> = ({
   area,
 }: {
   area: "toolbar" | "sidebar";
@@ -189,4 +189,4 @@ const ListingFilters: FunctionComponent<{ area: "toolbar" | "sidebar" }> = ({
   );
 };
 
-export default ListingFilters;
+export default ListingsFilters;

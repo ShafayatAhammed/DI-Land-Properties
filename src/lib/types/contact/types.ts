@@ -6,12 +6,6 @@ interface ActionType {
   description: string;
 }
 
-interface ContactFormInputType {
-  icon: ReactElement<SVGSVGElement>;
-  placeholder: string;
-  type: "text" | "email" | "tel";
-}
-
 interface ContactsType {
   picSrc: string;
   picAlt: string;
@@ -21,4 +15,4 @@ interface ContactsType {
   skype: string;
 }
 
-export type { ActionType, ContactFormInputType, ContactsType };
+export type { ActionType, ContactsType };

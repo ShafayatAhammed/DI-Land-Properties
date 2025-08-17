@@ -1,10 +1,10 @@
 import type { FunctionComponent, JSX } from "react";
-import type { ListingType as Listing } from "@/lib/types/listing/types";
-import ListingToolbar from "@/components/layout/listing/listing-toolbar/listing-toolbar";
-import ListingFilters from "@/components/layout/listing/listing-filters/listing-filters";
-import ListingCard from "@/components/ui/listing/listing-area/listing-card";
+import type { ListingType as Listing } from "@/lib/types/listings/types";
+import ListingsToolbar from "@/components/layout/listings/listings-toolbar/listings-toolbar";
+import ListingsFilters from "@/components/layout/listings/listings-filters/listings-filters";
+import ListingCard from "@/components/ui/listings/listings-area/listing-card";
 
-const Listing: FunctionComponent = (): JSX.Element => {
+const Listings: FunctionComponent = (): JSX.Element => {
   const listings: Listing[] = [
     {
       bannerSrc: "/carousel-banner-1.jpg",
@@ -130,12 +130,12 @@ const Listing: FunctionComponent = (): JSX.Element => {
 
   return (
     <>
-      <ListingToolbar />
+      <ListingsToolbar />
       <section className="bg-white pb-20 px-[17px] sm:px-7 md:px-14 xl:px-28">
         <div className="mx-auto max-w-[1536px] lg-xl-2:grid lg-xl-2:grid-cols-4">
           <div className="hidden lg-xl-2:block relative">
             <div className="border border-gray-300 py-6 px-4 mr-8 sticky top-0 left-0">
-              <ListingFilters area="sidebar" />
+              <ListingsFilters area="sidebar" />
             </div>
           </div>
           <div className="col-span-3 mt-10 grid xs-2:grid-cols-2 md-lg:grid-cols-3 gap-4">
@@ -183,4 +183,4 @@ const Listing: FunctionComponent = (): JSX.Element => {
   );
 };
 
-export default Listing;
+export default Listings;

@@ -1,7 +1,7 @@
 import type { FunctionComponent, JSX } from "react";
-import ListingFilters from "../listing-filters/listing-filters";
+import ListingFilters from "../listings-filters/listings-filters";
 
-const ListingToolbar: FunctionComponent = (): JSX.Element => {
+const ListingsToolbar: FunctionComponent = (): JSX.Element => {
   return (
     <section className="bg-white px-[17px] sm:px-7 md:px-14 xl:px-28 mt-[50px]">
       <div className="mx-auto max-w-[1536px] text-primary-text pb-10 lg-xl-2:pb-0 border-b border-gray-200 lg-xl-2:border-none">
@@ -47,4 +47,4 @@ const ListingToolbar: FunctionComponent = (): JSX.Element => {
   );
 };
 
-export default ListingToolbar;
+export default ListingsToolbar;

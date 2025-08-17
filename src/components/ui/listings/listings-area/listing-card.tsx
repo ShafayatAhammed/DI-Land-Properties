@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX } from "react";
-import type { ListingType as ListingCardProps } from "@/lib/types/listing/types";
+import type { ListingType as ListingCardProps } from "@/lib/types/listings/types";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -31,19 +31,19 @@ const ListingCard: FunctionComponent<ListingCardProps> = ({
           height={260}
           className="w-full aspect-[16/12]"
         />
-        <div className="absolute top-0 left-0 m-2 flex gap-2">
+        <div className="absolute top-0 left-0 m-2 flex gap-2 text-[10px]">
           <div className="bg-blue-1 py-0.5 px-1 rounded-sm">
-            <p className="text-white text-[10px] xl-2xl:text-xs font-bold">
+            <p className="text-white xl-2xl:text-xs font-bold">
               FEATURED
             </p>
           </div>
           <div className="bg-blue-2 py-0.5 px-1 rounded-sm">
-            <p className="text-white text-[10px] xl-2xl:text-xs font-bold">
+            <p className="text-white xl-2xl:text-xs font-bold">
               APARTMENTS
             </p>
           </div>
           <div className="bg-red-400 py-0.5 px-1 rounded-sm">
-            <p className="text-white text-[10px] xl-2xl:text-xs font-bold">
+            <p className="text-white xl-2xl:text-xs font-bold">
               BUY
             </p>
           </div>
