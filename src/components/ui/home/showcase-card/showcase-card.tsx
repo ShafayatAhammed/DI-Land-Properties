@@ -23,7 +23,7 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
       className="select-none inline-block w-full h-full group"
     >
       <div className="w-full h-full bg-white rounded-md">
-        <div>
+        <div className="relative">
           <Image
             src={bannerSrc}
             alt="Carousel Item Banner"
@@ -31,6 +31,19 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
             height={502}
             className="w-full aspect-[16/11] rounded-t-md"
           />
+          <div className="absolute top-0 left-0 m-2 flex gap-2 text-[10px]">
+            <div className="bg-blue-1 py-0.5 px-1 rounded-sm">
+              <p className="text-white xl-2xl:text-xs font-bold">FEATURED</p>
+            </div>
+            <div className="bg-blue-2 py-0.5 px-1 rounded-sm">
+              <p className="text-white xl-2xl:text-xs font-bold">APARTMENTS</p>
+            </div>
+            <div className="bg-red-400 py-0.5 px-1 rounded-sm">
+              <p className="text-white xl-2xl:text-xs font-bold">
+                {section == "carousel" ? "BUY" : "RENT"}
+              </p>
+            </div>
+          </div>
         </div>
         <div className="flex flex-col gap-1 p-5 px-2.5 xs:px-5">
           <h5
@@ -83,9 +96,7 @@ const ShowcaseCard: FunctionComponent<ShowcaseCardType> = ({
                   </svg>
                 </span>
                 <span>
-                  {bathsStr.length > 1
-                    ? bathsStr.slice(0, 2)
-                    : bathsStr}
+                  {bathsStr.length > 1 ? bathsStr.slice(0, 2) : bathsStr}
                 </span>
               </div>
               <div className="flex items-center gap-2">
